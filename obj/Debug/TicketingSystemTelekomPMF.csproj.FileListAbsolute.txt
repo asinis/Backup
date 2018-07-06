@@ -4,3 +4,9 @@ c:\users\ljubomir.sukovic\documents\visual studio 2013\Projects\TicketingSystemT
 c:\users\ljubomir.sukovic\documents\visual studio 2013\Projects\TicketingSystemTelekomPMF\obj\Debug\TicketingSystemTelekomPMF.csprojResolveAssemblyReference.cache
 c:\users\ljubomir.sukovic\documents\visual studio 2013\Projects\TicketingSystemTelekomPMF\obj\Debug\TicketingSystemTelekomPMF.dll
 c:\users\ljubomir.sukovic\documents\visual studio 2013\Projects\TicketingSystemTelekomPMF\obj\Debug\TicketingSystemTelekomPMF.pdb
+C:\Users\bozidar.soskic.ext\Desktop\TicketingSystem\bin\TicketingSystemTelekomPMF.dll.config
+C:\Users\bozidar.soskic.ext\Desktop\TicketingSystem\bin\TicketingSystemTelekomPMF.dll
+C:\Users\bozidar.soskic.ext\Desktop\TicketingSystem\bin\TicketingSystemTelekomPMF.pdb
+C:\Users\bozidar.soskic.ext\Desktop\TicketingSystem\obj\Debug\TicketingSystemTelekomPMF.csprojResolveAssemblyReference.cache
+C:\Users\bozidar.soskic.ext\Desktop\TicketingSystem\obj\Debug\TicketingSystemTelekomPMF.dll
+C:\Users\bozidar.soskic.ext\Desktop\TicketingSystem\obj\Debug\TicketingSystemTelekomPMF.pdb

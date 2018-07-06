@@ -57,7 +57,53 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\nprogress.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="icons\back_disabled.png" />
+    <Content Include="icons\back_enabled.png" />
+    <Content Include="icons\back_enabled_hover.png" />
+    <Content Include="icons\forward_disabled.png" />
+    <Content Include="icons\forward_enabled.png" />
+    <Content Include="icons\forward_enabled_hover.png" />
+    <Content Include="icons\loading.gif" />
+    <Content Include="icons\logo.svg" />
+    <Content Include="images\american-express.png" />
+    <Content Include="images\cropper.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\img.jpg" />
+    <Content Include="images\inbox.png" />
+    <Content Include="images\mastercard.png" />
+    <Content Include="images\media.jpg" />
+    <Content Include="images\paypal.png" />
+    <Content Include="images\picture.jpg" />
+    <Content Include="images\prod-1.jpg" />
+    <Content Include="images\prod-2.jpg" />
+    <Content Include="images\prod-3.jpg" />
+    <Content Include="images\prod-4.jpg" />
+    <Content Include="images\prod-5.jpg" />
+    <Content Include="images\user.png" />
+    <Content Include="images\visa.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\fastclick.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\nprogress.js" />
     <Content Include="TicketingSystem.Master" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\font-awesome.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -66,8 +112,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Style\bootstrap.min.css" />
     <Content Include="Web.config" />
     <Content Include="start.aspx" />
   </ItemGroup>
