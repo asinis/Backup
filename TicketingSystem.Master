@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TicketingSystem.master.cs" Inherits="TicketingSystemTelekomPMF.TicketingSystem" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Style/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row">
+            <div class="col-md-3">
+                <label>meni 1</label>
+                <br />
+                <label>meni 2</label>
+            </div>
+            <div class="col-md-9">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <label>sadrzaj</label>
+
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <label>donni meni </label>
+    </form>
+</body>
+</html>
