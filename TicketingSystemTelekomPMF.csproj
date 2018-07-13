@@ -104,6 +104,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="AddTicketType.aspx" />
+    <Content Include="AddStatus.aspx" />
+    <Content Include="AddTicketTask.aspx" />
+    <Content Include="ViewAllTicketTasks.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,6 +134,35 @@
     </Compile>
     <Compile Include="start.aspx.designer.cs">
       <DependentUpon>start.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTicketType.aspx.cs">
+      <DependentUpon>AddTicketType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTicketType.aspx.designer.cs">
+      <DependentUpon>AddTicketType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="AddStatus.aspx.cs">
+      <DependentUpon>AddStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStatus.aspx.designer.cs">
+      <DependentUpon>AddStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTicketTask.aspx.cs">
+      <DependentUpon>AddTicketTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTicketTask.aspx.designer.cs">
+      <DependentUpon>AddTicketTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllTicketTasks.aspx.cs">
+      <DependentUpon>ViewAllTicketTasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAllTicketTasks.aspx.designer.cs">
+      <DependentUpon>ViewAllTicketTasks.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
