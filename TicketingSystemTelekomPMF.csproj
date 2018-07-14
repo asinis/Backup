@@ -108,6 +108,7 @@
     <Content Include="AddStatus.aspx" />
     <Content Include="AddTicketTask.aspx" />
     <Content Include="ViewAllTicketTasks.aspx" />
+    <Content Include="TicketTaskDetails.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -163,6 +164,13 @@
     </Compile>
     <Compile Include="ViewAllTicketTasks.aspx.designer.cs">
       <DependentUpon>ViewAllTicketTasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TicketTaskDetails.aspx.cs">
+      <DependentUpon>TicketTaskDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TicketTaskDetails.aspx.designer.cs">
+      <DependentUpon>TicketTaskDetails.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

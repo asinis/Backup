@@ -11,7 +11,19 @@
     <h1>Pregled Ticket Task-ova</h1>
     <br />
     <form runat="server">
-        <asp:GridView CssClass="table table-striped" id="GridViewAllTicketTasks" runat="server"></asp:GridView>
+        <asp:GridView CssClass="table table-striped" OnRowCommand="GridViewAllTicketTasks_RowCommand" AutoGenerateColumns="false" id="GridViewAllTicketTasks" runat="server">
+            <Columns>
+                <asp:BoundField DataField="Naziv" HeaderText="Naziv" />
+                <asp:BoundField DataField="Opis" HeaderText="Opis" />
+                <asp:BoundField DataField="Datum unosa" HeaderText="Datum unosa" />
+                <asp:TemplateField ShowHeader="false">
+                    <ItemTemplate>
+                        <asp:Button CssClass="btn btn-info" CausesValidation="false" CommandArgument='<%# Eval("Id") %>' CommandName="cmdTicketTaskDetails" text="Detalji" runat="server"/>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+            
+        </asp:GridView>
     </form>
     
 </asp:Content>

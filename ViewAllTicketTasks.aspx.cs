@@ -13,11 +13,31 @@ namespace TicketingSystemTelekomPMF
         Util util = new Util();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!Page.IsPostBack)
+            {
+                try
+                {
+                    DataTable dt = util.getAllTicketTasks("GET_ALL_TICKET_TASKS");
+                    GridViewAllTicketTasks.DataSource = dt;
+                    GridViewAllTicketTasks.DataBind();
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+            
+        }
+
+        protected void GridViewAllTicketTasks_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
             try
             {
-                DataTable dt = util.getAllTicketTasks("GET_ALL_TICKET_TASKS");
-                GridViewAllTicketTasks.DataSource = dt;
-                GridViewAllTicketTasks.DataBind();
+                if (e.CommandName == "cmdTicketTaskDetails")
+                {
+                    int argId = Convert.ToInt32(e.CommandArgument);
+                    Response.Redirect("TicketTaskDetails.aspx?id=" + argId);
+                }
             }
             catch(Exception ex)
             {

@@ -16,3 +16,9 @@ C:\Users\sinisa.sukovic.ext\Desktop\Projekat\Telekom_PMF\bin\TicketingSystemTele
 C:\Users\sinisa.sukovic.ext\Desktop\Projekat\Telekom_PMF\obj\Debug\TicketingSystemTelekomPMF.csprojResolveAssemblyReference.cache
 C:\Users\sinisa.sukovic.ext\Desktop\Projekat\Telekom_PMF\obj\Debug\TicketingSystemTelekomPMF.dll
 C:\Users\sinisa.sukovic.ext\Desktop\Projekat\Telekom_PMF\obj\Debug\TicketingSystemTelekomPMF.pdb
+C:\Users\sinisa.sukovic.ext\Desktop\Projekat2\Telekom_PMF\bin\TicketingSystemTelekomPMF.dll.config
+C:\Users\sinisa.sukovic.ext\Desktop\Projekat2\Telekom_PMF\bin\TicketingSystemTelekomPMF.dll
+C:\Users\sinisa.sukovic.ext\Desktop\Projekat2\Telekom_PMF\bin\TicketingSystemTelekomPMF.pdb
+C:\Users\sinisa.sukovic.ext\Desktop\Projekat2\Telekom_PMF\obj\Debug\TicketingSystemTelekomPMF.csprojResolveAssemblyReference.cache
+C:\Users\sinisa.sukovic.ext\Desktop\Projekat2\Telekom_PMF\obj\Debug\TicketingSystemTelekomPMF.dll
+C:\Users\sinisa.sukovic.ext\Desktop\Projekat2\Telekom_PMF\obj\Debug\TicketingSystemTelekomPMF.pdb
