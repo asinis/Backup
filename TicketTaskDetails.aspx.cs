@@ -13,8 +13,6 @@ namespace TicketingSystemTelekomPMF
         Util util = new Util();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!Page.IsPostBack)
-            {
                 try
                 {
                     int ticketTaskId = Convert.ToInt32(Request.QueryString["id"]);
@@ -23,23 +21,41 @@ namespace TicketingSystemTelekomPMF
                     txtTicketTaskDetailsDescription.Text = Convert.ToString(dbRowForTicketTaskById.Rows[0]["Description"]);
                     txtTicketTaskDetailsinsertDate.Text = Convert.ToString(dbRowForTicketTaskById.Rows[0]["InsertDate"]);
 
-                    ddlStatusForTicketTask.DataSource = util.fillDataTable("GET_VALID_STATUS",ticketTaskId);
+                    ddlStatusForTicketTask.DataSource = util.fillDataTableForDdlTicketTask("GET_VALID_STATUS", ticketTaskId);
                     ddlStatusForTicketTask.DataTextField = "Naziv";
                     ddlStatusForTicketTask.DataValueField = "Id";
                     ddlStatusForTicketTask.DataBind();
+
+                    gvTakenStatus.DataSource = util.fillDataTableForGridViewStatusTask("GET_TAKEN_STATUS_FOR_TASK", ticketTaskId);
+                    gvTakenStatus.DataBind();
                 }
                 catch(Exception ex)
                 {
 
                 }
-            }
+            
         }
 
         protected void btnSaveStatusForTicketTask_Click(object sender, EventArgs e)
         {
-            int selectedStatusId = Convert.ToInt32(ddlStatusForTicketTask.SelectedItem.Value);
-            int ticketTaskId = Convert.ToInt32(Request.QueryString["id"]);
-            
+            if(Convert.ToInt32(ddlStatusForTicketTask.Items.Count)!=0)
+            {
+                int selectedStatusId = Convert.ToInt32(ddlStatusForTicketTask.SelectedItem.Value);
+                int ticketTaskId = Convert.ToInt32(Request.QueryString["id"]);
+
+                if (util.addStatsuForTask(selectedStatusId, ticketTaskId) == 1)
+                {
+                    divSuccess.Visible = true;
+                }
+
+                ddlStatusForTicketTask.DataSource = util.fillDataTableForDdlTicketTask("GET_VALID_STATUS", ticketTaskId);
+                ddlStatusForTicketTask.DataTextField = "Naziv";
+                ddlStatusForTicketTask.DataValueField = "Id";
+                ddlStatusForTicketTask.DataBind();
+
+                gvTakenStatus.DataSource = util.fillDataTableForGridViewStatusTask("GET_TAKEN_STATUS_FOR_TASK", ticketTaskId);
+                gvTakenStatus.DataBind();
+            }
         }
 
     }

@@ -2,7 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Unos Tipova Tiketa</h1>
+    <div style="margin-top:20px;" class="alert alert-success alert-dismissible" id="divSuccessTaskAdded" runat="server" visible="false">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Uspjesno!</strong> Dodali ste status.
+    </div>
+    <h1>Unos Taska</h1>
     <br />
     <form runat="server">
         <div class="row">

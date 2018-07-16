@@ -22,7 +22,10 @@ namespace TicketingSystemTelekomPMF
                 string ticketTaskName = txtTicketTaskName.Text;
                 string ticketTaskDescription = txtTicketTasksDescription.Text;
 
-                util.addTicketTask(ticketTaskName, ticketTaskDescription);
+                if(util.addTicketTask(ticketTaskName, ticketTaskDescription)!=0)
+                {
+                    divSuccessTaskAdded.Visible = true;
+                }
             }
             catch(Exception ex)
             {

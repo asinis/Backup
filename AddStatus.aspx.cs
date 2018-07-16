@@ -21,7 +21,10 @@ namespace TicketingSystemTelekomPMF
             {
                 string statusName = txtStatusName.Text;
                 string statusDescription = txtStatusDescription.Text;
-                util.addStatus(statusName,statusDescription);
+                if(util.addStatus(statusName,statusDescription)!=0)
+                {
+                    divSuccessStatusAdded.Visible = true;
+                }
             }
             catch(Exception ex)
             {

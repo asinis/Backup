@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AllStatusForTask.asmx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\font-awesome.min.css" />
@@ -109,6 +110,8 @@
     <Content Include="AddTicketTask.aspx" />
     <Content Include="ViewAllTicketTasks.aspx" />
     <Content Include="TicketTaskDetails.aspx" />
+    <Content Include="ViewAllTicketTypes.aspx" />
+    <Content Include="TicketTypeDetails.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -121,7 +124,12 @@
     <Content Include="start.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllStatusForTask.asmx.cs">
+      <DependentUpon>AllStatusForTask.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status.cs" />
     <Compile Include="TicketingSystem.Master.cs">
       <DependentUpon>TicketingSystem.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,6 +179,20 @@
     </Compile>
     <Compile Include="TicketTaskDetails.aspx.designer.cs">
       <DependentUpon>TicketTaskDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllTicketTypes.aspx.cs">
+      <DependentUpon>ViewAllTicketTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAllTicketTypes.aspx.designer.cs">
+      <DependentUpon>ViewAllTicketTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TicketTypeDetails.aspx.cs">
+      <DependentUpon>TicketTypeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TicketTypeDetails.aspx.designer.cs">
+      <DependentUpon>TicketTypeDetails.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

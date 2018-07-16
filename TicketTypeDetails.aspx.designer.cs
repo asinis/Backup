@@ -10,97 +10,124 @@
 namespace TicketingSystemTelekomPMF {
     
     
-    public partial class WebForm6 {
+    public partial class WebForm8 {
         
         /// <summary>
-        /// divSuccess control.
+        /// divSuccessUpdateType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSuccess;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSuccessUpdateType;
         
         /// <summary>
-        /// lblTicketTaskDetailsName control.
+        /// lblTicketTypeDetailsName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTicketTaskDetailsName;
+        protected global::System.Web.UI.WebControls.Label lblTicketTypeDetailsName;
         
         /// <summary>
-        /// txtTicketTaskDetailsName control.
+        /// txtTicketTypeDetailsName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTicketTaskDetailsName;
+        protected global::System.Web.UI.WebControls.TextBox txtTicketTypeDetailsName;
         
         /// <summary>
-        /// lblTicketTaskStatus control.
+        /// lblTaskForTicketType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTicketTaskStatus;
+        protected global::System.Web.UI.WebControls.Label lblTaskForTicketType;
         
         /// <summary>
-        /// ddlStatusForTicketTask control.
+        /// ddlTasksForType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlStatusForTicketTask;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTasksForType;
         
         /// <summary>
-        /// lblTicketTaskDetailsDescription control.
+        /// lblTicketTypeDetailsDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTicketTaskDetailsDescription;
+        protected global::System.Web.UI.WebControls.Label lblTicketTypeDetailsDescription;
         
         /// <summary>
-        /// txtTicketTaskDetailsDescription control.
+        /// txtTicketTypeDetailsDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTicketTaskDetailsDescription;
+        protected global::System.Web.UI.WebControls.TextBox txtTicketTypeDetailsDescription;
         
         /// <summary>
-        /// btnSaveStatusForTicketTask control.
+        /// btnSaveTaskForType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveStatusForTicketTask;
+        protected global::System.Web.UI.WebControls.Button btnSaveTaskForType;
         
         /// <summary>
-        /// lblTicketTaskDetailsInsertDate control.
+        /// lblTicketTypeDetailsInsertDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTicketTaskDetailsInsertDate;
+        protected global::System.Web.UI.WebControls.Label lblTicketTypeDetailsInsertDate;
         
         /// <summary>
-        /// txtTicketTaskDetailsinsertDate control.
+        /// txtTicketTypeDetailsinsertDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTicketTaskDetailsinsertDate;
+        protected global::System.Web.UI.WebControls.TextBox txtTicketTypeDetailsinsertDate;
+        
+        /// <summary>
+        /// lblActive control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblActive;
+        
+        /// <summary>
+        /// chbActive control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chbActive;
+        
+        /// <summary>
+        /// btnSaveTicketTypeChanges control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSaveTicketTypeChanges;
         
         /// <summary>
         /// gvTakenStatus control.
@@ -110,5 +137,14 @@ namespace TicketingSystemTelekomPMF {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvTakenStatus;
+        
+        /// <summary>
+        /// gv2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gv2;
     }
 }

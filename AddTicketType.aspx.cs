@@ -21,7 +21,10 @@ namespace TicketingSystemTelekomPMF
             {
                 string name = txtTicketTypeName.Text;
                 string comment = txtTicketTypeDescription.Text;
-                util.addTicketType(name, comment);
+                if(util.addTicketType(name, comment)!=0)
+                {
+                    divSuccessTypeAdded.Visible = true;
+                }
             }
             catch(Exception ex)
             {
