@@ -10,7 +10,7 @@ namespace TicketingSystemTelekomPMF
 {
     public partial class WebForm8 : System.Web.UI.Page
     {
-        Util util = new Util();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!Page.IsPostBack)
@@ -30,13 +30,13 @@ namespace TicketingSystemTelekomPMF
 
         protected void dataInitialize(int ticketTypeId)
         {
-            DataTable dt = util.getTicketTypeDetailsById(ticketTypeId);
+            DataTable dt = Util.getTicketTypeDetailsById(ticketTypeId);
             txtTicketTypeDetailsName.Text = Convert.ToString(dt.Rows[0]["Name"]);
             txtTicketTypeDetailsDescription.Text = Convert.ToString(dt.Rows[0]["Description"]);
             txtTicketTypeDetailsinsertDate.Text = Convert.ToString(dt.Rows[0]["InsertDate"]);
             chbActive.Checked = Convert.ToBoolean(dt.Rows[0]["Active"]);
 
-            ddlTasksForType.DataSource = util.fillDataTableForTypeTaskDdl(Convert.ToInt32(Request.QueryString["id"]));
+            ddlTasksForType.DataSource = Util.fillDataTableForTypeTaskDdl(Convert.ToInt32(Request.QueryString["id"]));
             ddlTasksForType.DataTextField = "Name";
             ddlTasksForType.DataValueField = "Id";
             ddlTasksForType.DataBind();
@@ -57,7 +57,7 @@ namespace TicketingSystemTelekomPMF
                 }
                 string ticketTypeName = txtTicketTypeDetailsName.Text;
                 string ticketTypeDescription = txtTicketTypeDetailsDescription.Text;
-                if(util.updateTicketType(id, ticketTypeName, ticketTypeDescription, checkedActive)!=0)
+                if(Util.updateTicketType(id, ticketTypeName, ticketTypeDescription, checkedActive)!=0)
                 {
                     divSuccessUpdateType.Visible = true;
                 }

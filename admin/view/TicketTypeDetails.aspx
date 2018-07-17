@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TicketingSystem.Master" AutoEventWireup="true" CodeBehind="TicketTypeDetails.aspx.cs" Inherits="TicketingSystemTelekomPMF.WebForm8" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TicketingSystem.Master" AutoEventWireup="true" CodeBehind="ticketTypeDetails.aspx.cs" Inherits="TicketingSystemTelekomPMF.WebForm8" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         table,th,td {

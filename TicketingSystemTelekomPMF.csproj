@@ -105,13 +105,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="AddTicketType.aspx" />
-    <Content Include="AddStatus.aspx" />
-    <Content Include="AddTicketTask.aspx" />
-    <Content Include="ViewAllTicketTasks.aspx" />
-    <Content Include="TicketTaskDetails.aspx" />
-    <Content Include="ViewAllTicketTypes.aspx" />
-    <Content Include="TicketTypeDetails.aspx" />
+    <Content Include="admin\add\ticketType.aspx" />
+    <Content Include="admin\add\status.aspx" />
+    <Content Include="admin\add\ticketTask.aspx" />
+    <Content Include="admin\view\allTicketTasks.aspx" />
+    <Content Include="admin\view\ticketTaskDetails.aspx" />
+    <Content Include="admin\view\allTicketTypes.aspx" />
+    <Content Include="admin\view\ticketTypeDetails.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,55 +144,55 @@
     <Compile Include="start.aspx.designer.cs">
       <DependentUpon>start.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddTicketType.aspx.cs">
-      <DependentUpon>AddTicketType.aspx</DependentUpon>
+    <Compile Include="admin\add\ticketType.aspx.cs">
+      <DependentUpon>ticketType.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddTicketType.aspx.designer.cs">
-      <DependentUpon>AddTicketType.aspx</DependentUpon>
+    <Compile Include="admin\add\ticketType.aspx.designer.cs">
+      <DependentUpon>ticketType.aspx</DependentUpon>
     </Compile>
     <Compile Include="Util.cs" />
-    <Compile Include="AddStatus.aspx.cs">
-      <DependentUpon>AddStatus.aspx</DependentUpon>
+    <Compile Include="admin\add\status.aspx.cs">
+      <DependentUpon>status.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddStatus.aspx.designer.cs">
-      <DependentUpon>AddStatus.aspx</DependentUpon>
+    <Compile Include="admin\add\status.aspx.designer.cs">
+      <DependentUpon>status.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddTicketTask.aspx.cs">
-      <DependentUpon>AddTicketTask.aspx</DependentUpon>
+    <Compile Include="admin\add\ticketTask.aspx.cs">
+      <DependentUpon>ticketTask.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddTicketTask.aspx.designer.cs">
-      <DependentUpon>AddTicketTask.aspx</DependentUpon>
+    <Compile Include="admin\add\ticketTask.aspx.designer.cs">
+      <DependentUpon>ticketTask.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewAllTicketTasks.aspx.cs">
-      <DependentUpon>ViewAllTicketTasks.aspx</DependentUpon>
+    <Compile Include="admin\view\allTicketTasks.aspx.cs">
+      <DependentUpon>allTicketTasks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewAllTicketTasks.aspx.designer.cs">
-      <DependentUpon>ViewAllTicketTasks.aspx</DependentUpon>
+    <Compile Include="admin\view\allTicketTasks.aspx.designer.cs">
+      <DependentUpon>allTicketTasks.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TicketTaskDetails.aspx.cs">
-      <DependentUpon>TicketTaskDetails.aspx</DependentUpon>
+    <Compile Include="admin\view\ticketTaskDetails.aspx.cs">
+      <DependentUpon>ticketTaskDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TicketTaskDetails.aspx.designer.cs">
-      <DependentUpon>TicketTaskDetails.aspx</DependentUpon>
+    <Compile Include="admin\view\ticketTaskDetails.aspx.designer.cs">
+      <DependentUpon>ticketTaskDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewAllTicketTypes.aspx.cs">
-      <DependentUpon>ViewAllTicketTypes.aspx</DependentUpon>
+    <Compile Include="admin\view\allTicketTypes.aspx.cs">
+      <DependentUpon>allTicketTypes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewAllTicketTypes.aspx.designer.cs">
-      <DependentUpon>ViewAllTicketTypes.aspx</DependentUpon>
+    <Compile Include="admin\view\allTicketTypes.aspx.designer.cs">
+      <DependentUpon>allTicketTypes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TicketTypeDetails.aspx.cs">
-      <DependentUpon>TicketTypeDetails.aspx</DependentUpon>
+    <Compile Include="admin\view\ticketTypeDetails.aspx.cs">
+      <DependentUpon>ticketTypeDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TicketTypeDetails.aspx.designer.cs">
-      <DependentUpon>TicketTypeDetails.aspx</DependentUpon>
+    <Compile Include="admin\view\ticketTypeDetails.aspx.designer.cs">
+      <DependentUpon>ticketTypeDetails.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

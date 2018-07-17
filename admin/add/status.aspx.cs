@@ -7,29 +7,30 @@ using System.Web.UI.WebControls;
 
 namespace TicketingSystemTelekomPMF
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class WebForm3 : System.Web.UI.Page
     {
-        Util util = new Util();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnAddTicketType_Click(object sender, EventArgs e)
+        protected void btnAddStatus_Click(object sender, EventArgs e)
         {
-            try
+            try 
             {
-                string name = txtTicketTypeName.Text;
-                string comment = txtTicketTypeDescription.Text;
-                if(util.addTicketType(name, comment)!=0)
+                string statusName = txtStatusName.Text;
+                string statusDescription = txtStatusDescription.Text;
+                if(Util.addStatus(statusName,statusDescription)!=0)
                 {
-                    divSuccessTypeAdded.Visible = true;
+                    divSuccessStatusAdded.Visible = true;
                 }
             }
             catch(Exception ex)
             {
-
+                
             }
+
         }
     }
 }

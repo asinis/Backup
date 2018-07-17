@@ -13,25 +13,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- NProgress -->
-    <script src="js/nprogress.js"></script>
+    <script src="/js/nprogress.js"></script>
     <link href="css/nprogress.css" rel="stylesheet" />
     
     <!-- FastClick -->
-    <script src="js/fastclick.js" defer></script>
+    <script src="/js/fastclick.js" defer></script>
 
     <!-- Custom -->
     <link href="css/custom.css" rel="stylesheet" />
-    <script src="js/custom.js" defer></script>
+    <script src="/js/custom.js" defer></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -43,18 +43,18 @@
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
                         <a href="index.html" class="site_title">
-                          <img width="50" src="icons/logo.svg" />
+                          <img width="50" src="/icons/logo.svg" />
                           <span style="font-size: 21px">Ticketing System</span></a>
                     </div>
                     <div class="clearfix"></div>
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
-                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                            <img src="/images/img.jpg" alt="..." class="img-circle profile_img">
                         </div>
                         <div class="profile_info">
                             <span>Dobrodošli,</span>
-                            <h2>Marko Marković</h2>
+                            <h2>Tijana Marković</h2>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -68,15 +68,20 @@
                                 <li>
                                     <a><i class="fa fa-plus"></i> Dodaj <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="index.html">Tip tiketa</a></li>
-                                        <li><a href="index2.html">Status tiketa</a></li>
-                                        <li><a href="index3.html">Input polja</a></li>
-                                        <li><a href="index3.html">Tiket task</a></li>
-                                        <li><a href="AddTicketTask.aspx">Ticket task</a></li>
-                                        <li><a href="AddTicketType.aspx">Ticket type</a></li>
-                                        <li><a href="AddStatus.aspx">Ticket status</a></li>
-                                        <li><a href="ViewAllTicketTasks.aspx">Pregled taskova</a></li>
-                                        <li><a href="ViewAllTicketTypes.aspx">Pregled tipova</a></li>
+                                        <li><a href="/admin/add/ticketType.aspx">Ticket type</a></li>
+                                        <li><a href="/admin/add/status.aspx">Ticket status</a></li>
+                                        <li><a href="/admin/add/ticketTask.aspx">Ticket task</a></li>
+
+                                        <li><a href="/admin/add/inputField.aspx">Input field</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a><i class="fa fa-search"></i> Pregled <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="/admin/view/allTicketTasks.aspx">Pregled taskova</a></li>
+                                        <li><a href="/admin/view/allTicketTypes.aspx">Pregled tipova</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -109,7 +114,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="images/img.jpg" alt="">John Doe
+                                    <img src="/images/img.jpg" alt="">Tijana Marković
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -132,9 +137,9 @@
                                 <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                     <li>
                                         <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="/images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                                                <span>John Smith</span>
+                                                <span>Tijana Marković</span>
                                                 <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
@@ -144,9 +149,9 @@
                                     </li>
                                     <li>
                                         <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="/images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                                                <span>John Smith</span>
+                                                <span>Tijana Marković</span>
                                                 <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
@@ -156,9 +161,9 @@
                                     </li>
                                     <li>
                                         <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="/images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                                                <span>John Smith</span>
+                                                <span>Tijana Marković</span>
                                                 <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
@@ -168,9 +173,9 @@
                                     </li>
                                     <li>
                                         <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="/images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                                                <span>John Smith</span>
+                                                <span>Tijana Marković</span>
                                                 <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">

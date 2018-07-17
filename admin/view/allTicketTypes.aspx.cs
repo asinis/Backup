@@ -4,22 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
 
 namespace TicketingSystemTelekomPMF
 {
-    public partial class WebForm5 : System.Web.UI.Page
+    public partial class WebForm7 : System.Web.UI.Page
     {
-        Util util = new Util();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!Page.IsPostBack)
             {
                 try
                 {
-                    DataTable dt = util.getAllTicketTasks("GET_ALL_TICKET_TASKS");
-                    GridViewAllTicketTasks.DataSource = dt;
-                    GridViewAllTicketTasks.DataBind();
+                    gvAllTicketTypes.DataSource = Util.fillDataTableForAllTypes();
+                    gvAllTicketTypes.DataBind();
                 }
                 catch (Exception ex)
                 {
@@ -29,14 +27,14 @@ namespace TicketingSystemTelekomPMF
             
         }
 
-        protected void GridViewAllTicketTasks_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void gvAllTicketTypes_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             try
             {
-                if (e.CommandName == "cmdTicketTaskDetails")
+                if(e.CommandName=="cmdTicketTypeDetails")
                 {
-                    int argId = Convert.ToInt32(e.CommandArgument);
-                    Response.Redirect("TicketTaskDetails.aspx?id=" + argId);
+                    int id = Convert.ToInt32(e.CommandArgument);
+                    Response.Redirect("TicketTypeDetails.aspx?id="+id);
                 }
             }
             catch(Exception ex)

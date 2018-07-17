@@ -9,7 +9,7 @@ namespace TicketingSystemTelekomPMF
 {
     public partial class WebForm4 : System.Web.UI.Page
     {
-        Util util = new Util();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -22,7 +22,7 @@ namespace TicketingSystemTelekomPMF
                 string ticketTaskName = txtTicketTaskName.Text;
                 string ticketTaskDescription = txtTicketTasksDescription.Text;
 
-                if(util.addTicketTask(ticketTaskName, ticketTaskDescription)!=0)
+                if(Util.addTicketTask(ticketTaskName, ticketTaskDescription)!=0)
                 {
                     divSuccessTaskAdded.Visible = true;
                 }
