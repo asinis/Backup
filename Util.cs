@@ -305,5 +305,56 @@ namespace TicketingSystemTelekomPMF
             }
         }
           */
+
+        public static string addInputField(int task, int field, string id, string label, string css, string pattern, string msg, string data, bool required)
+        {
+            string res = "";
+
+            try
+            {
+                string query = "ADD_INPUT_FIELD";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@task", task);
+                cmd.Parameters.AddWithValue("@field", field);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@label", label);
+                cmd.Parameters.AddWithValue("@css", css);
+                cmd.Parameters.AddWithValue("@pattern", pattern);
+                cmd.Parameters.AddWithValue("@msg", msg);
+                cmd.Parameters.AddWithValue("@data", data);
+                cmd.Parameters.AddWithValue("@required", required);
+
+                if (conn.State == ConnectionState.Closed)
+                    conn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                res = ex.Message;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+            }
+
+            return res;
+        }
+
+        public static DataTable fetchStoredToDataTable(string query)
+        {
+            DataTable dt = new DataTable();
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            conn.Open();
+            dt.Load(cmd.ExecuteReader());
+            conn.Close();
+
+            return dt;
+        }
     }
 }

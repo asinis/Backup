@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\add\inputField.aspx" />
+    <Content Include="admin\view\allInputFields.aspx" />
     <Content Include="AllStatusForTask.asmx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\custom.css" />
@@ -89,6 +91,7 @@
     <Content Include="images\user.png" />
     <Content Include="images\visa.png" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bozo.js" />
     <Content Include="js\custom.js" />
     <Content Include="js\fastclick.js" />
     <Content Include="js\jquery.min.js" />
@@ -124,6 +127,20 @@
     <Content Include="start.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\add\inputField.aspx.cs">
+      <DependentUpon>inputField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add\inputField.aspx.designer.cs">
+      <DependentUpon>inputField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\view\allInputFields.aspx.cs">
+      <DependentUpon>allInputFields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\view\allInputFields.aspx.designer.cs">
+      <DependentUpon>allInputFields.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AllStatusForTask.asmx.cs">
       <DependentUpon>AllStatusForTask.asmx</DependentUpon>
       <SubType>Component</SubType>

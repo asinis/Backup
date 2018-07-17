@@ -32,6 +32,7 @@
     <!-- Custom -->
     <link href="css/custom.css" rel="stylesheet" />
     <script src="/js/custom.js" defer></script>
+    <script src="/js/bozo.js" defer></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -80,8 +81,9 @@
                                 <li>
                                     <a><i class="fa fa-search"></i> Pregled <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="/admin/view/allTicketTasks.aspx">Pregled taskova</a></li>
-                                        <li><a href="/admin/view/allTicketTypes.aspx">Pregled tipova</a></li>
+                                        <li><a href="/admin/view/allTicketTasks.aspx">Taskova</a></li>
+                                        <li><a href="/admin/view/allTicketTypes.aspx">Tipova ticket-a</a></li>
+                                        <li><a href="/admin/view/allInputFields.aspx">Input polja</a></li>
                                     </ul>
                                 </li>
                             </ul>
