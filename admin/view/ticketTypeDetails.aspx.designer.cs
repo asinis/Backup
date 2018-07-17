@@ -13,6 +13,24 @@ namespace TicketingSystemTelekomPMF {
     public partial class WebForm8 {
         
         /// <summary>
+        /// divError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divError;
+        
+        /// <summary>
+        /// divDeleteTaskForType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divDeleteTaskForType;
+        
+        /// <summary>
         /// divSuccessUpdateType control.
         /// </summary>
         /// <remarks>
@@ -20,6 +38,15 @@ namespace TicketingSystemTelekomPMF {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSuccessUpdateType;
+        
+        /// <summary>
+        /// divAddTaskForType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divAddTaskForType;
         
         /// <summary>
         /// lblTicketTypeDetailsName control.
@@ -130,21 +157,21 @@ namespace TicketingSystemTelekomPMF {
         protected global::System.Web.UI.WebControls.Button btnSaveTicketTypeChanges;
         
         /// <summary>
-        /// gvTakenStatus control.
+        /// gvTakenTasks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvTakenStatus;
+        protected global::System.Web.UI.WebControls.GridView gvTakenTasks;
         
         /// <summary>
-        /// gv2 control.
+        /// divNoRowsInGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gv2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divNoRowsInGridView;
     }
 }

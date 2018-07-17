@@ -8,6 +8,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Pregled Tipova Tiketa</h1>
+    <a href="../add/ticketType.aspx" class="btn btn-info btn-md">
+       <span class="glyphicon glyphicon-plus"></span> Dodaj Tip 
+    </a>
+    <br />
     <br />
     <form runat="server">
         <asp:GridView ID="gvAllTicketTypes" CssClass="table table-striped" OnRowCommand="gvAllTicketTypes_RowCommand" AutoGenerateColumns="false" runat="server">

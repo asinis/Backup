@@ -12,13 +12,14 @@ namespace TicketingSystemTelekomPMF
         
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void btnAddStatus_Click(object sender, EventArgs e)
         {
             try 
             {
+                divError.Visible = false;
                 string statusName = txtStatusName.Text;
                 string statusDescription = txtStatusDescription.Text;
                 if(Util.addStatus(statusName,statusDescription)!=0)
@@ -28,7 +29,7 @@ namespace TicketingSystemTelekomPMF
             }
             catch(Exception ex)
             {
-                
+                divError.Visible = true;
             }
 
         }

@@ -19,6 +19,7 @@ namespace TicketingSystemTelekomPMF
         {
              try
             {
+                divError.Visible = false;
                 string ticketTaskName = txtTicketTaskName.Text;
                 string ticketTaskDescription = txtTicketTasksDescription.Text;
 
@@ -29,7 +30,7 @@ namespace TicketingSystemTelekomPMF
             }
             catch(Exception ex)
             {
-
+                divError.Visible = true;
             }
         }
     }

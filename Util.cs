@@ -26,6 +26,47 @@ namespace TicketingSystemTelekomPMF
             }
         }
 
+        public static void updateTicketTask(int id, string name, string description, int chk)
+        {
+            using(SqlConnection con = new SqlConnection(connString))
+            {
+                SqlCommand cmd = new SqlCommand("UPDATE_TICKET_TASK", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@taskId",id);
+                cmd.Parameters.AddWithValue("@taskName",name);
+                cmd.Parameters.AddWithValue("@taskDescription",description);
+                cmd.Parameters.Add("@taskActive", chk);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public static void setInactiveTaskStatusCombination(int id)
+        {
+            using (SqlConnection con = new SqlConnection(connString))
+            {
+                SqlCommand cmd = new SqlCommand("SET_INACTIVE_TASK_STATUS_COMBINATION", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@taskStatusCombinationId", id);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public static void setInactiveTypeTaskCombination(int id)
+        {
+            using (SqlConnection con = new SqlConnection(connString))
+            {
+                SqlCommand cmd = new SqlCommand("SET_INACTIVE_TYPE_TASK_COMBINATION", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@typeTaskCombinationId", id);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
         public static int updateTicketType(int id, string name, string description, int chk)
         {
             int rez;
@@ -65,6 +106,20 @@ namespace TicketingSystemTelekomPMF
             dt.Load(cmd.ExecuteReader());
             conn.Close();
             
+            return dt;
+        }
+        public static DataTable fillDataTableForGridViewTypeTask(int typeId)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection con = new SqlConnection(connString))
+            {
+                SqlCommand cmd = new SqlCommand("GET_TAKEN_TASKS_FOR_TYPE", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@typeId", typeId);
+
+                con.Open();
+                dt.Load(cmd.ExecuteReader());
+            }
             return dt;
         }
 
@@ -210,6 +265,28 @@ namespace TicketingSystemTelekomPMF
             conn.Close();
             
             return dt;
+        }
+        public static int saveTaskForType(int typeId, int taskId)
+        {
+            int rez;
+            using (SqlConnection con = new SqlConnection(connString))
+            {
+                SqlCommand cmd = new SqlCommand("ADD_TASK_FOR_TYPE", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@typeId", typeId);
+                cmd.Parameters.AddWithValue("@taskId", taskId);
+
+                con.Open();
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    rez = 1;
+                }
+                else
+                {
+                    rez = 0;
+                }
+            }
+            return rez;
         }
         /*public static void insertTicketStatus(int statusId,int ticketTaskId)
         {

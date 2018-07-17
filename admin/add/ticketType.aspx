@@ -3,11 +3,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <form runat="server">
+    <div style="margin-top:20px;" class="alert alert-danger alert-dismissible" id="divError" runat="server" visible="false">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Greska!</strong> Doslo je do greske, obratite se administratoru.
+    </div>
     <div style="margin-top:20px;" class="alert alert-success alert-dismissible" id="divSuccessTypeAdded" runat="server" visible="false">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         <strong>Uspjesno!</strong> Dodali ste status.
     </div>
     <h1>Unos Tipa Tiketa</h1>
+    <br />
     <div class="row">
         <div class="col-md-1">
             <asp:Label ID="lblTicketTypeName" runat="server" Text="Naziv :"></asp:Label>

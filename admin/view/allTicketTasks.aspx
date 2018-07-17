@@ -9,6 +9,10 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Pregled Ticket Task-ova</h1>
+    <a href="../add/ticketTask.aspx" class="btn btn-info btn-md">
+       <span class="glyphicon glyphicon-plus"></span> Dodaj Task 
+    </a>
+    <br />
     <br />
     <form runat="server">
         <asp:GridView CssClass="table table-striped" OnRowCommand="GridViewAllTicketTasks_RowCommand" AutoGenerateColumns="false" id="GridViewAllTicketTasks" runat="server">

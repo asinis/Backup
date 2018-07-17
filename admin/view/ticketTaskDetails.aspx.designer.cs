@@ -13,6 +13,33 @@ namespace TicketingSystemTelekomPMF {
     public partial class WebForm6 {
         
         /// <summary>
+        /// divError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divError;
+        
+        /// <summary>
+        /// divUpdateTaskSuccess control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divUpdateTaskSuccess;
+        
+        /// <summary>
+        /// divDeleteStatusForTask control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divDeleteStatusForTask;
+        
+        /// <summary>
         /// divSuccess control.
         /// </summary>
         /// <remarks>
@@ -103,6 +130,33 @@ namespace TicketingSystemTelekomPMF {
         protected global::System.Web.UI.WebControls.TextBox txtTicketTaskDetailsinsertDate;
         
         /// <summary>
+        /// lblActive control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblActive;
+        
+        /// <summary>
+        /// chbActive control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chbActive;
+        
+        /// <summary>
+        /// btnSaveTicketTaskChanges control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSaveTicketTaskChanges;
+        
+        /// <summary>
         /// gvTakenStatus control.
         /// </summary>
         /// <remarks>
@@ -110,5 +164,14 @@ namespace TicketingSystemTelekomPMF {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvTakenStatus;
+        
+        /// <summary>
+        /// divNoRowsInGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divNoRowsInGridView;
     }
 }

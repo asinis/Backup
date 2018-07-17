@@ -15,6 +15,7 @@ namespace TicketingSystemTelekomPMF
         {
             if(!Page.IsPostBack)
             {
+                falseDivsSuccess();
                 try
                 {
                     int ticketTypeId = Convert.ToInt32(Request.QueryString["id"]);
@@ -22,12 +23,19 @@ namespace TicketingSystemTelekomPMF
                 }
                 catch (Exception ex)
                 {
-
+                    divError.Visible = true;
                 }
             }
             
         }
 
+        protected void falseDivsSuccess()
+        {
+            divDeleteTaskForType.Visible = false;
+            divAddTaskForType.Visible = false;
+            divSuccessUpdateType.Visible = false;
+            divNoRowsInGridView.Visible = false;
+        }
         protected void dataInitialize(int ticketTypeId)
         {
             DataTable dt = Util.getTicketTypeDetailsById(ticketTypeId);
@@ -40,11 +48,19 @@ namespace TicketingSystemTelekomPMF
             ddlTasksForType.DataTextField = "Name";
             ddlTasksForType.DataValueField = "Id";
             ddlTasksForType.DataBind();
+
+            gvTakenTasks.DataSource = Util.fillDataTableForGridViewTypeTask(ticketTypeId);
+            gvTakenTasks.DataBind();
+            if(Convert.ToInt32(gvTakenTasks.Rows.Count.ToString())==0)
+            {
+                divNoRowsInGridView.Visible = true;
+            }
         }
         protected void btnSaveTicketTypeChanges_Click(object sender, EventArgs e)
         {
             try
             {
+                falseDivsSuccess();
                 int id = Convert.ToInt32(Request.QueryString["id"]);
                 int checkedActive;
                 if (chbActive.Checked == true)
@@ -64,7 +80,48 @@ namespace TicketingSystemTelekomPMF
             }
             catch(Exception ex)
             {
+                divError.Visible = true;
+            }
+        }
+        protected void btnSaveTaskForType_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(ddlTasksForType.Items.Count) != 0)
+            {
+                try
+                {
+                    falseDivsSuccess();
+                    int selectedTaskId = Convert.ToInt32(ddlTasksForType.SelectedItem.Value);
+                    int typeId = Convert.ToInt32(Request.QueryString["id"]);
 
+                    Util.saveTaskForType(typeId, selectedTaskId);
+
+                    dataInitialize(typeId);
+                    divAddTaskForType.Visible = true;
+                }
+                catch (Exception ex)
+                {
+                    divError.Visible = true;
+                }
+
+            }
+        }
+
+        protected void gvTakenTasks_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            try
+            {
+                if (e.CommandName == "cmdDeleteTaskForType")
+                {
+                    falseDivsSuccess();
+                    int idTicketTypeTaskCombination = Convert.ToInt32(e.CommandArgument);
+                    Util.setInactiveTypeTaskCombination(idTicketTypeTaskCombination);
+                    divDeleteTaskForType.Visible = true;
+                    dataInitialize(Convert.ToInt32(Request.QueryString["id"]));
+                }
+            }
+            catch (Exception ex)
+            {
+                divError.Visible = true;
             }
         }
     }
